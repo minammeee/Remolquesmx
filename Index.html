@@ -1,11 +1,19 @@
-
 <!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Remolques MX - Fabricación Premium</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <style>
       body {
         background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
@@ -31,7 +39,7 @@
         font-size: 2.25rem;
         color: #2c1a0e;
       }
-      /* Botón flotante de WhatsApp */
+      /* WhatsApp Floating Button */
       .whatsapp-float {
         position: fixed;
         width: 60px;
@@ -54,7 +62,7 @@
         transform: scale(1.1);
         background-color: #6b4e31;
       }
-      /* Mapa */
+      /* Map Container */
       .map-container {
         border: 3px solid #4b2c20;
         border-radius: 0.75rem;
@@ -74,7 +82,7 @@
       .map-container.loading::before {
         display: block;
       }
-      /* Botones */
+      /* Buttons */
       .btn {
         background-color: #4b2c20;
         color: #fff;
@@ -83,12 +91,14 @@
         font-weight: 600;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+        text-decoration: none;
+        display: inline-block;
       }
       .btn:hover {
         background-color: #6b4e31;
         transform: translateY(-2px);
       }
-      /* Fallback para imágenes rotas */
+      /* Image Fallback */
       img {
         display: block;
         max-width: 100%;
@@ -98,14 +108,6 @@
         content: url('https://via.placeholder.com/600x400?text=Remolque+MX');
       }
     </style>
-    <!-- Iconos -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
   </head>
   <body>
     <!-- Header -->
@@ -141,17 +143,20 @@
     <section>
       <h2 class="mb-4 text-center">Catálogo de Remolques</h2>
       <p class="text-center mb-6 text-lg max-w-xl mx-auto">
-        Próximamente: modelos de carga, RZR, ganaderos, food trucks y multiuso.
+        Descubre nuestros modelos de carga, RZR, ganaderos, food trucks y multiuso. ¡Próximamente más opciones!
       </p>
       <div class="grid md:grid-cols-3 gap-6 text-center font-semibold text-gray-700">
         <div class="border-2 border-amber-900 p-6 rounded-lg bg-amber-50 shadow-md">
-          📦 Espacio para catálogo
+          <p>Remolque de Carga</p>
+          <p class="text-sm mt-2">Ideal para transporte pesado. Personalizable.</p>
         </div>
         <div class="border-2 border-amber-900 p-6 rounded-lg bg-amber-50 shadow-md">
-          📦 Espacio para catálogo
+          <p>Food Truck</p>
+          <p class="text-sm mt-2">Diseñado para negocios móviles. Moderno y funcional.</p>
         </div>
         <div class="border-2 border-amber-900 p-6 rounded-lg bg-amber-50 shadow-md">
-          📦 Espacio para catálogo
+          <p>Remolque Multiuso</p>
+          <p class="text-sm mt-2">Versátil para cualquier necesidad.</p>
         </div>
       </div>
     </section>
@@ -160,10 +165,11 @@
     <section>
       <h2 class="mb-4 text-center">Herrería</h2>
       <p class="text-center mb-6 text-lg max-w-xl mx-auto">
-        Toldos, rejas, portones, ventanas, puertas y más.
+        Toldos, rejas, portones, ventanas, puertas y más, fabricados con precisión.
       </p>
       <div class="border-2 border-amber-900 p-6 rounded-lg text-center font-semibold text-gray-700 bg-amber-50 shadow-md">
-        🛠 Espacio para mostrar trabajos de herrería
+        <p>Trabajos de herrería personalizados</p>
+        <p class="text-sm mt-2">Consulta nuestros proyectos destacados o solicita una cotización.</p>
       </div>
     </section>
 
@@ -171,10 +177,11 @@
     <section>
       <h2 class="mb-4 text-center">Productos en Mercado Libre & Amazon</h2>
       <p class="text-center mb-6 text-lg max-w-xl mx-auto">
-        Productos básicos y accesorios con envío inmediato.
+        Encuentra productos básicos y accesorios con envío inmediato.
       </p>
       <div class="border-2 border-amber-900 p-6 rounded-lg text-center font-semibold text-gray-700 bg-amber-50 shadow-md">
-        🛒 Espacio para productos de e-commerce
+        <p>Accesorios para remolques</p>
+        <p class="text-sm mt-2">Visita nuestras tiendas en línea para más detalles.</p>
       </div>
     </section>
 
@@ -194,10 +201,10 @@
         <p class="text-lg font-semibold">📞 Tel: +52 33 4754 0496</p>
         <p class="text-lg font-semibold">✉️ Email: contacto@remolquesmx.com</p>
       </div>
-      <div class="mt-8 map-container loading">
+      <div class="mt-8 map-container">
         <iframe
           class="w-full h-72 rounded-lg"
-          src="https://maps.google.com/maps?q=San%20Isidro%20Mazatepec,%20Jalisco&t=&z=14&ie=UTF8&iwloc=&output=embed"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.512246084032!2d-103.43969868509147!3d20.676693086192156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428b1a5f7a6f3ab%3A0x7e8f9d8c7f1f2a3b!2sSan%20Isidro%20Mazatepec%2C%20Jal.!5e0!3m2!1ses!2smx!4v1697671234567!5m2!1ses!2smx"
           frameborder="0"
           allowfullscreen
           loading="lazy"
@@ -213,7 +220,7 @@
       </div>
     </footer>
 
-    <!-- Botón flotante WhatsApp -->
+    <!-- WhatsApp Floating Button -->
     <a href="https://wa.me/523347540496" class="whatsapp-float" target="_blank">
       <i class="fab fa-whatsapp"></i>
     </a>
