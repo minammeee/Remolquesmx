@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Remolques MX - Fabricación Premium</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        background-image: url('https://i.ibb.co/p3KhB1B/wood-texture.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        font-family: 'Inter', sans-serif;
+      }
+      section {
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 1.5rem;
+        padding: 3rem;
+        margin: 3rem auto;
+        max-width: 1200px;
+        box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease-in-out;
+      }
+      section:hover {
+        transform: translateY(-5px);
+      }
+      h2 {
+        font-weight: 800;
+        color: #1f2937;
+      }
+      /* Botón flotante de WhatsApp */
+      .whatsapp-float {
+        position: fixed;
+        width: 70px;
+        height: 70px;
+        bottom: 30px;
+        right: 30px;
+        background-color: #4b2c20;
+        color: #fff;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 36px;
+        box-shadow: 3px 3px 8px rgba(0,0,0,0.4);
+        z-index: 100;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+      }
+      .whatsapp-float:hover {
+        transform: scale(1.15);
+        background-color: #6b4e31;
+      }
+      /* Mapa */
+      .map-container {
+        border: 4px solid #4b2c20;
+        border-radius: 1rem;
+        overflow: hidden;
+      }
+    </style>
+    <!-- Icono de WhatsApp y Facebook -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body class="font-sans text-gray-800">
+    <!-- Header -->
+    <header class="bg-gray-900 bg-opacity-80 text-white py-8 shadow-xl">
+      <div class="max-w-7xl mx-auto flex justify-between items-center px-8">
+        <h1 class="text-4xl font-extrabold tracking-tight">Remolques MX</h1>
+        <div class="flex items-center gap-4">
+          <a
+            href="https://wa.me/523347540496"
+            target="_blank"
+            class="bg-amber-800 px-6 py-3 rounded-xl text-white font-bold shadow-lg hover:bg-amber-900 transition duration-300"
+          >
+            Cotiza en WhatsApp
+          </a>
+          <a
+            href="https://www.facebook.com/RemolquesMX"
+            target="_blank"
+            class="bg-amber-800 px-6 py-3 rounded-xl text-white font-bold shadow-lg hover:bg-amber-900 transition duration-300"
+          >
+            Facebook
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="text-center">
+      <h2 class="text-5xl font-extrabold mb-6">Fabricación de Remolques Premium</h2>
+      <p class="mb-8 text-xl max-w-3xl mx-auto">
+        Remolques hechos a medida con acabados en madera tratada y estructura de acero reforzado, diseñados para durar.
+      </p>
+      <img
+        src="https://i.ibb.co/Zm5B2L6/remolque.png"
+        alt="Remolque MX"
+        class="mx-auto rounded-2xl shadow-2xl max-w-full h-auto"
+      />
+    </section>
+
+    <!-- Catálogo -->
+    <section>
+      <h2 class="text-4xl font-extrabold mb-6 text-center">Catálogo de Remolques</h2>
+      <p class="text-center mb-8 text-lg max-w-2xl mx-auto">
+        Próximamente podrás explorar todos nuestros modelos: carga, RZR, ganaderos, food trucks y multiuso.
+      </p>
+      <div class="grid md:grid-cols-3 gap-8 text-center font-semibold text-gray-700">
+        <div class="border-4 border-amber-800 p-8 rounded-xl bg-amber-50 shadow-md">
+          📦 Espacio para catálogo
+        </div>
+        <div class="border-4 border-amber-800 p-8 rounded-xl bg-amber-50 shadow-md">
+          📦 Espacio para catálogo
+        </div>
+        <div class="border-4 border-amber-800 p-8 rounded-xl bg-amber-50 shadow-md">
+          📦 Espacio para catálogo
+        </div>
+      </div>
+    </section>
+
+    <!-- Herrería -->
+    <section>
+      <h2 class="text-4xl font-extrabold mb-6 text-center">Herrería</h2>
+      <p class="text-center mb-8 text-lg max-w-2xl mx-auto">
+        Toldos, rejas, portones, ventanas, puertas y más, fabricados con precisión.
+      </p>
+      <div class="border-4 border-amber-800 p-8 rounded-xl text-center font-semibold text-gray-700 bg-amber-50 shadow-md">
+        🛠 Espacio para mostrar trabajos de herrería
+      </div>
+    </section>
+
+    <!-- Productos base -->
+    <section>
+      <h2 class="text-4xl font-extrabold mb-6 text-center">
+        Productos en Mercado Libre & Amazon
+      </h2>
+      <p class="text-center mb-8 text-lg max-w-2xl mx-auto">
+        Encuentra productos básicos y accesorios listos para envío inmediato.
+      </p>
+      <div class="border-4 border-amber-800 p-8 rounded-xl text-center font-semibold text-gray-700 bg-amber-50 shadow-md">
+        🛒 Espacio para productos de e-commerce
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section>
+      <h2 class="text-4xl font-extrabold mb-6 text-center">Contacto</h2>
+      <p class="text-center mb-8 text-lg max-w-2xl mx-auto">
+        Escríbenos para cotizaciones, pedidos o más información.
+      </p>
+      <div class="flex flex-col md:flex-row justify-center items-center gap-8">
+        <a
+          href="https://wa.me/523347540496"
+          target="_blank"
+          class="bg-amber-800 px-8 py-4 rounded-xl text-white font-bold shadow-lg hover:bg-amber-900 transition duration-300"
+        >
+          WhatsApp
+        </a>
+        <a
+          href="https://www.facebook.com/RemolquesMX"
+          target="_blank"
+          class="bg-amber-800 px-8 py-4 rounded-xl text-white font-bold shadow-lg hover:bg-amber-900 transition duration-300"
+        >
+          Facebook
+        </a>
+        <p class="text-xl font-semibold">📞 Tel: +52 33 4754 0496</p>
+        <p class="text-xl font-semibold">✉️ Email: contacto@remolquesmx.com</p>
+      </div>
+      <div class="mt-10 map-container">
+        <iframe
+          class="w-full h-80 rounded-lg shadow-2xl"
+          src="https://maps.google.com/maps?q=San%20Isidro%20Mazatepec,%20Jalisco&t=&z=14&ie=UTF8&iwloc=&output=embed"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 bg-opacity-90 text-white py-8 mt-16">
+      <div class="text-center text-lg">
+        © 2025 Remolques MX - Todos los derechos reservados
+      </div>
+    </footer>
+
+    <!-- Botón flotante WhatsApp -->
+    <a
+      href="https://wa.me/523347540496"
+      class="whatsapp-float"
+      target="_blank"
+    >
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </body>
+</html>
